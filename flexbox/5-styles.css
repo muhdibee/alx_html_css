@@ -262,6 +262,11 @@
          background: transparent;
   }
   
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
   .header-logo {
     position: var(--header-logo-position);
   }
