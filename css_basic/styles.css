@@ -1,9 +1,13 @@
-body, main {
+body, main, header {
     display: flex;
 }
 
 body {
     flex-direction: column;
+}
+
+body header {
+    justify-content: space-between;
 }
 
 body main {
