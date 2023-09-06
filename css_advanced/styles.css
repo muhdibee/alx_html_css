@@ -118,7 +118,7 @@
 
 
 body {
-background-color: var(--color-dark-grey);
+/* background-color: var(--color-dark-grey); */
 }
 
 section {
@@ -127,7 +127,7 @@ section {
 
 /* Base containers */
 .container {
-    width: 62.5rem;
+    max-width: 62.5rem;
     /* color: var(--color-white); */
     display: var(--d-flex);
     flex-flow: var(--flex-column-nowrap);
@@ -275,6 +275,7 @@ h1[class="get-schooled"]  {
 }
 
 /* Testimonial section */
+
 .testimonial-section {
     color: var(--color-white);
     background-color: var(--color-primary);
@@ -305,10 +306,61 @@ h1[class="get-schooled"]  {
 }
 
 .most-popular-tutorial-section >.most-popular-tutorial-container{
+    /* width: ; */
     background-color: rgb(245, 240, 240);
     /* border: 2px solid #D73953; */
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding: 4rem 0;
+}
+
+.most-popular-tutorial-container >.tutorial-cards-container{
+    max-width: inherit;
+    display: var(--d-flex);
+    flex-flow: var(--flex-row-nowrap);
+    justify-content: var(--flex-justify-content-between); 
+    gap: 1rem;
+    padding: 6rem 0;
+}
+
+.tutorial-cards-container .tutorial-card-image {
+    width:14rem;
+    height: 9rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+}
+
+/*********************Membership section *******************/
+.membership-section {
+    color: var(--color-white);
+    background-color: var(--color-background-dark);
+    
+}
+
+.membership-section >.container {
+    border: 1px solid #D73953;
+    padding: 4rem 0;
+    gap: 6rem;
+
+}
+
+.membership-section >.membership-container >.members-container{
+    display: var(--d-flex);
+    flex-flow: var(--flex-row-wrap);
+    justify-content: var(--flex-justify-content-between);
+}
+
+.membership-container >.members-container >div{
+    margin-top: 1rem;
+    max-width: 15rem;
+    display: var(--d-flex);
+    flex-flow: var(--flex-column-nowrap);
+    justify-content: var(--flex-justify-content-center);
+    align-items: var(--flex-align-items-center);
+    /* border: 1px solid #D73953; */
+}
+.membership-container >.members-container >div p{
+    text-align: center;
+    margin: 0;
+    line-height: 1.5rem;
 }
 
 
