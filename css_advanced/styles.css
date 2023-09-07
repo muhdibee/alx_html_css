@@ -23,8 +23,9 @@
     --color-white: #ffffff;
     --color-grey: #a0a0a0;
     --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
+    --color-dark-grey: #353535; 
     --color-background-dark: #071629;
+    --color-background-light: rgb(245, 240, 240);
     --link-hover-color: #C271FF;
 
     --container-max-width: 62.5rem; 
@@ -121,6 +122,10 @@ body {
 /* background-color: var(--color-dark-grey); */
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 10px;
+}
+
 section {
     margin: auto auto;
 }
@@ -134,6 +139,7 @@ section {
     justify-content: var(--flex-justify-content-center); 
     align-items: var(--flex-align-items-center);
     margin:auto auto;    
+    /* border: 1px solid var(--color-primary); */
 }
 
 /* Header */
@@ -300,15 +306,13 @@ h1[class="get-schooled"]  {
 /* most-popular-tutorial-section */
 
 .most-popular-tutorial-section {
-    background-color: rgb(245, 240, 240);
+    background-color: var(--color-background-light);
     border: 1px ridge;
     color: var(--color-black);
 }
 
 .most-popular-tutorial-section >.most-popular-tutorial-container{
-    /* width: ; */
-    background-color: rgb(245, 240, 240);
-    /* border: 2px solid #D73953; */
+    /* max-width: fit-content; */
     padding: 4rem 0;
 }
 
@@ -319,10 +323,18 @@ h1[class="get-schooled"]  {
     justify-content: var(--flex-justify-content-between); 
     gap: 1rem;
     padding: 6rem 0;
+    /* border: 1px solid #D73953; */
+}
+
+.tutorial-cards-container .tutorial-card {
+    width:14rem;
+    height: auto;
+    /* border: 1px solid var(--color-primary); */
+
 }
 
 .tutorial-cards-container .tutorial-card-image {
-    width:14rem;
+    width:inherit;
     height: 9rem;
     border-radius: 5px;
     border: 1px solid var(--color-primary);
@@ -336,7 +348,7 @@ h1[class="get-schooled"]  {
 }
 
 .membership-section >.container {
-    border: 1px solid #D73953;
+    /* border: 1px solid #D73953; */
     padding: 4rem 0;
     gap: 6rem;
 
@@ -363,7 +375,39 @@ h1[class="get-schooled"]  {
     line-height: 1.5rem;
 }
 
+/* ***************** FAQ SECTION ***************** */
+.faq-section {
+    background-color: var(--color-background-light);
+}
+ .faq-container {
+    padding: 3rem 0rem;
+    /* border: 1px solid #D73953; */
+ }
+.double-h-d-t-w-container {
+    margin-top: 2rem;
+    display: var(--d-flex);
+    flex-flow: var(--flex-row-wrap);
+    justify-content: var(--flex-justify-content-center);
+    align-items: var(--flex-align-items-center);
+    /* border: 1px solid #D73953; */
 
+}
+.double-h-d-t-w {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: var(--d-flex);
+    flex-flow: var(--flex-row-wrap);
+    justify-content: var(--flex-justify-content-between);
+    align-items: var(--flex-align-items-center);
+    /* border: 1px solid #D73953; */
+
+}
+
+.h-d-t-w {
+    width: 22rem;
+    /* gap: 2rem; */
+
+}
 
 
 
